@@ -4,7 +4,7 @@ Backup your mongo database to s3
 Runs off sync shelljs commands
 
 
-###Usage
+### Usage
 
 Will work with any project that is referencing mongodb from an envFile
 for example
