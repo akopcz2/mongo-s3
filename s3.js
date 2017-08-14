@@ -37,15 +37,14 @@ fs.readFile(`${database}.zip`, function (err, data) {
   let timestamp = Math.floor(date.getTime() / 1000);
   let dateString = `${month}_${day}_${year}_${timestamp}`;
 
-  var s3 = new AWS.S3();
-  s3.upload({
-    Bucket: `${bucket}`,
-    Key:  `${database}_${dateString}.zip`,
-    Body: base64data,
-    ACL: 'public-read'
-  },function (resp) {
-    console.log(arguments);
-    console.log('Successfully uploaded package.');
-  });
-
+  let s3 = new AWS.S3();
+    s3.upload({
+        Bucket: `${bucket}`,
+        Key:  `${database}_${dateString}.zip`,
+        Body: base64data,
+        ACL: 'public-read'
+    },function (resp) {
+        console.log(arguments);
+        console.log('Successfully uploaded package.');
+    });
 });

@@ -1,5 +1,5 @@
 {
-  "name": "Mongo-S3",
+  "name": "dump-to-s3",
   "version": "1.0.0",
   "description": "",
   "scripts": {
