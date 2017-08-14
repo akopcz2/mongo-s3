@@ -1,0 +1,20 @@
+{
+  "name": "Mongo-S3",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adrian Kopczewski",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.96.0",
+    "dotenv": "^4.0.0",
+    "prompt": "^1.0.0",
+    "shelljs": "^0.7.8"
+  },
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/akopcz2/mongo-s3"
+  }
+}
